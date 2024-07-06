@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ad5f09a480.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Rudresh</span> Mishra</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image-removebg-preview.jpg" alt="About Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I'm Rudresh Mishra, a passionate engineering student specializing in Artificial Intelligence and Machine Learning. With a strong academic background and a knack for problem-solving, I consistently rank at the top of my class. Beyond academics, I believe in the power of kindness and helping others whenever possible.
+
+My journey in technology has equipped me with skills in database management, front-end and back-end development, and proficiency in Python and various JavaScript libraries. I thrive on challenges and am excited about leveraging technology to create innovative solutions.
+
+Let's connect and explore how we can make a difference together!
+
+
+                    </p>
+                    <p>Welcome to my personal portfolio website.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem Solving</span><br>Adept at analyzing complex problems and devising effective solutions.</li>
+<li><span>Database Management</span><br>Hands-on experience with MongoDB for efficient data storage.</li>
+<li><span>Frontend & JavaScript Development</span><br>Using Python (Streamlit, Flask, NumPy, Pandas, Matplotlib) and JavaScript (Node.js, Express) for interactive web applications.</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Movie Recommendation System</span><br>
+                                Developed a Python-based system using Pandas for data analysis and Flask for backend API, enhancing user engagement with personalized movie suggestions.
+                            </li>
+                            <li><span>Book Recommendation System</span><br>
+                                Created an intuitive recommendation platform, utilizing MongoDB for efficient data management and JavaScript frameworks for frontend interactivity.
+                            </li>
+                            <li><span>Music Recommendation System</span><br>
+                                Engineered a dynamic solution with Node.js and Express, employing machine learning models to deliver tailored music recommendations based on user preferences.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>High School</span><br>
+                                Completed 10th and 12th grades with 84.6% and 84.8% respectively, emphasizing a strong academic foundation.
+                            </li>
+                            <li><span>Bachelor of Technology (B.Tech)</span><br>
+                                Currently maintaining an impressive 8.7 CGPA, focusing on specialization in AIML (Artificial Intelligence and Machine Learning).
+                            </li>
+                            <li><span>UPTU Rank</span><br>
+                                Secured General category rank 249 in the Uttar Pradesh Technical University (UPTU) entrance examination.
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Expert in creating visually appealing and responsive web designs using HTML, CSS, and JavaScript. Specializes in crafting user-friendly interfaces that enhance user experience. Proficient in Python frameworks including Flask for backend development and Matplotlib for data visualization.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!----------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="movie2.png" alt="">
+                    <div class="layer">
+                        <h3>Movie Recommendation  Webapp</h3>
+                        <p>Lorem ipsum dolor sit amet nulla alias! Sequi assumenda dolor.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="music.png" alt="">
+                    <div class="layer">
+                        <h3>Music  recommendation App</h3>
+                        <p>Lorem ipsum dolor sit amet nulla alias! Sequi assumenda dolor.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="book.png" alt="">
+                    <div class="layer">
+                        <h3>Book recommendation app</h3>
+                        <p>Lorem ipsum dolor sit amet nulla alias! Sequi assumenda dolor.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!----------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> 2k22.aiml.2212691@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 9305350433</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/rudresh_21_mishra?igsh=aGNtNG91ZWxlaXc2"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rudresh-mishra-398747259/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="Resume1.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <p>&copy; 2024 All rights reserved</p>
+    </div>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+    
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+    
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwfLIxx9zv-wNlu6TmQqKkozUe_Gsgd2ZP2-rgGwqvh30wBVpJFKg2d3DQUhiDpVVIu/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!";
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+    </script>
+    
+</body>
+</html>
